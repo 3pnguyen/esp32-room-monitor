@@ -1,1 +1,12 @@
+# Arduino build folder
+*.pioenvs/
+*.elf
+*.bin
+*.hex
 
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets
+sensitive_info.h
