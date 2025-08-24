@@ -35,8 +35,9 @@ For the ESP32,
 3. Change "SENSITIVE_INFO_EXAMPLE_H" to "SENSITIVE_INFO_H"
 4. In the "sensitive_info" file, put in your information like your network, the IP which your Home Assistant server has, etc.
 5. If you change any of the pins, change that in the "not_sensitive_info"
-6. After everything is configured correctly, upload the code, and you should be good to go. If the code does work, you will see the on-board LED of the ESP32 turn on and turn off.
-7. If you want to adjust some of the sensors, you can do that in the code
+6. Install some of the libraries that the code requires. Mentioned in the code near the top.
+7. After, upload the code, and you should be good to go. If the code does work, you will see the on-board LED of the ESP32 turn on and turn off.
+8. If you want to adjust some of the sensors, you can do that in the code
 
 <img width="1280" height="866" alt="Home Assistant SS 1" src="https://github.com/user-attachments/assets/c4ba8031-24c4-416f-b3d3-f68643c7dfaa" />
 
