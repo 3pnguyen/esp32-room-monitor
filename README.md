@@ -24,8 +24,8 @@ This project was made to capture data from inside a room and send that data to H
 
 ## 📋 How to use this
 
-(assuming you already have Home Assistant, the Mosquitto Broker add-on, the simple file editor or VS Code add-on, the circuit all wired up, and you have Arduino IDE)
-(you can use Arduino IDE for the next steps ahead. I wouldn't know how to without it so just use it for the easiest expeirence)
+* (assuming you already have Home Assistant, the Mosquitto Broker add-on, the simple file editor or VS Code add-on, the circuit all wired up, and you have Arduino IDE)
+* (you can use Arduino IDE for the next steps ahead. I wouldn't know how to without it so just use it for the easiest expeirence)
 
 I don't know why you would want to but just in case:
 
@@ -45,7 +45,7 @@ In Home Assistant,
 1. Go to your configuration yaml file
 2. Copy the image above. If it is not for your bedroom, you can change the name of that
 
-(you can edit the config yaml in the simple file editor or VS Code editor either one works fine)
+* (you can edit the config yaml in the simple file editor or VS Code editor either one works fine)
 
 ## 🪰 Known issues
 
