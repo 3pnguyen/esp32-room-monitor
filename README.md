@@ -2,10 +2,11 @@
 
 ## An ESP32 project that uses a few sensors to monitor light, temperature, humidity, and motion in a room.
 
-<img width="1286" height="851" alt="Home Assistant SS 2" src="https://github.com/user-attachments/assets/24d56b13-5f1e-485e-99d2-aa3e6731779b" />
-![Completed Build 1 (without enclosure)](https://github.com/user-attachments/assets/ccc383c0-601e-4471-9a5e-cd154567ecfd)
+![Completed Build 1 (without enclosure)](https://github.com/user-attachments/assets/e35e205c-7968-424e-a256-367307a0e299)
 
-## About the project
+<img width="1286" height="851" alt="Home Assistant SS 2" src="https://github.com/user-attachments/assets/24d56b13-5f1e-485e-99d2-aa3e6731779b" />
+
+## ✨ About the project
 
 This project was made to capture data from inside a room and send that data to Home Assistant. (light status, temperature, humidity, and presense) By using a few automations, I was able to devices turn on in a room when someone entered, turn on the fan when it was too hot, etc. It uses an ESP32 DevKit V1 DOIT, a few sensors, and some decoupling capacitors. It works by getting sensor data, proceesing it, and sending it to Home Assistant via MQTT. I could have used ESPHome to create the code, but I decided to do it myself. Here's what the code can do:
 
@@ -15,9 +16,13 @@ This project was made to capture data from inside a room and send that data to H
 * Have code wirelessly with Arduino OTA
 * Send over data with MQTT
 
-## Schematic + full project
+## ⚡ Schematic
 
-## How to use this
+<img width="1875" height="1337" alt="Schematic PNG" src="https://github.com/user-attachments/assets/743cee9b-19ec-4686-b6c2-3833eabdce51" />
+
+A lot of the GPIO pins are empty, so feel free to add more if you wish!
+
+## 📋 How to use this
 
 (assuming you already have Home Assistant, the Mosquitto Broker add-on, and the circuit all wired up)
 
@@ -38,19 +43,15 @@ In Home Assistant,
 1. Go to your configuration yaml file
 2. Copy the image above. If it is not for your bedroom, you can change the name of that
 
-## How to collaborate with this project
+## 🤝 How to collaborate with this project
 
 If you find anything that could be fixed or improved, you can mark it as an issue. If you have improved the code in a way and want to collaborate, you can share the code with the issue you filed so I know what you fixed or improved.
 
-## What is expected for a contributer
+## ✅ What is expected for a contributer
 
 * That the code they changed, improved, or added, actually fixes or improves the code
 * Use the issues tab to mark improvements or bugs
 
-## Known issues
+## 🪰 Known issues
 
 * Depending on how you configure the LD2410C, it may be too sensitive and capture motion when someone is not in the room
-
-## Schematic
-
-<img width="1875" height="1337" alt="Schematic PNG" src="https://github.com/user-attachments/assets/743cee9b-19ec-4686-b6c2-3833eabdce51" />
