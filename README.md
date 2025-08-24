@@ -20,40 +20,4 @@ This project was made to capture data from inside a room and send that data to H
 
 <img width="1875" height="1337" alt="Schematic PNG" src="https://github.com/user-attachments/assets/743cee9b-19ec-4686-b6c2-3833eabdce51" />
 
-* A lot of the GPIO pins are empty, so feel free to add more if you wish!
-* I don't have a PCB design of this.
-
-## 📋 How to use this
-
-(assuming you already have Home Assistant, the Mosquitto Broker add-on, and the circuit all wired up)
-
-I don't know why you would want to but just in case:
-
-For the ESP32,
-1. Download the code and the two header files
-2. For the "sensitive_info_example" file, change the name to "sensitive_info"
-3. Change "SENSITIVE_INFO_EXAMPLE_H" to "SENSITIVE_INFO_H"
-4. In the "sensitive_info" file, put in your information like your network, the IP which your Home Assistant server has, etc.
-5. If you change any of the pins, change that in the "not_sensitive_info"
-6. Install some of the libraries that the code requires. Mentioned in the code near the top.
-7. After, upload the code, and you should be good to go. If the code does work, you will see the on-board LED of the ESP32 turn on and turn off.
-8. If you want to adjust some of the sensors, you can do that in the code
-
-<img width="1280" height="866" alt="Home Assistant SS 1" src="https://github.com/user-attachments/assets/c4ba8031-24c4-416f-b3d3-f68643c7dfaa" />
-
-In Home Assistant,
-1. Go to your configuration yaml file
-2. Copy the image above. If it is not for your bedroom, you can change the name of that
-
-## 🤝 How to collaborate with this project
-
-If you find anything that could be fixed or improved, you can mark it as an issue. If you have improved the code in a way and want to collaborate, you can share the code with the issue you filed so I know what you fixed or improved.
-
-## ✅ What is expected for a contributer
-
-* That the code they changed, improved, or added, actually fixes or improves the code
-* Use the issues tab to mark improvements or bugs
-
-## 🪰 Known issues
-
-* Depending on how you configure the LD2410C, it may be too sensitive and capture motion when someone is not in the room
+* I don't have a PCB design of this. 😁
