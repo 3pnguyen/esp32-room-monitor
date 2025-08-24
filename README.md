@@ -24,7 +24,8 @@ This project was made to capture data from inside a room and send that data to H
 
 ## 📋 How to use this
 
-(assuming you already have Home Assistant, the Mosquitto Broker add-on, and the circuit all wired up)
+(assuming you already have Home Assistant, the Mosquitto Broker add-on, the circuit all wired up, and you have Arduino IDE)
+(you can use Arduino IDE for the next steps ahead. I wouldn't know how to without it so just use it for the easiest expeirence)
 
 I don't know why you would want to but just in case:
 
