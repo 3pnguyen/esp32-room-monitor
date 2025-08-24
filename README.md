@@ -20,7 +20,8 @@ This project was made to capture data from inside a room and send that data to H
 
 <img width="1875" height="1337" alt="Schematic PNG" src="https://github.com/user-attachments/assets/743cee9b-19ec-4686-b6c2-3833eabdce51" />
 
-A lot of the GPIO pins are empty, so feel free to add more if you wish!
+* A lot of the GPIO pins are empty, so feel free to add more if you wish!
+* I don't have a PCB design of this.
 
 ## 📋 How to use this
 
