@@ -14,6 +14,7 @@
 
 //for the photoresistor/LDR
 #define LDR_PIN 33
+#define LIGHT_THRESHOLD 950 //the light threshold before the room is considered to have no light
 
 /*
 for the LD2410C
@@ -25,5 +26,7 @@ I used UART2
 #define LD_RX_PIN 16
 #define LD_TX_PIN 17
 #define UART_INTERFACE 2
+const uint8_t ENERGY_THRESHOLD 40; //the energy threshold, (0-100) before the room is considered to have no motion
+
 
 #endif
