@@ -249,7 +249,7 @@ void run_DHT(bool debug = false) { //if enough time has passed, check the DHT re
 
 //Photoresistor ----------------------------------------------------------------------------------------------------------------------------------------------------------
 Debounce<bool> LDRDebounce(false);
-EMAFilter<int> LDRFilter(0.2, 0.1, 1100);
+EMAFilter<int> LDRFilter(0.2, 0.1, LIGHT_THRESHOLD);
 
 //gets the light value from the LDR, puts it into the filter, checks if the current filtered value is above the threshold, and sends to MQTT if state change
 //if the function is being run initially, it will warm up the filter
@@ -288,8 +288,6 @@ void setup_LDR() { //sets the LDR pin-mode, and runs the "run_LDR" initially
 }
 
 //LD2410C ----------------------------------------------------------------------------------------------------------------------------------------------------------
-const uint8_t energyThreshold = 50;
-
 IntervalTimer LDTimer(100);
 IntervalTimer LDDebugSerialTimer(1000);
 Debounce<bool> LDDebounce(false);
@@ -329,7 +327,7 @@ void setup_LD(bool debug = false) { //setup the LD2410C and check if it is conne
 void run_LD(bool debug = false) { //get sensor data, filter it, and send, on an interval
   if (LDTimer.isReady()) {
     motion_sensor.read();
-    bool rawPresence = (motion_sensor.stationaryTargetEnergy() > energyThreshold || motion_sensor.movingTargetEnergy() > energyThreshold);
+    bool rawPresence = (motion_sensor.stationaryTargetEnergy() > ENERGY_THRESHOLD || motion_sensor.movingTargetEnergy() > ENERGY_THRESHOLD);
     LDFilter.calculate((rawPresence) ? 1.0f : 0.0f);
     bool presence = LDFilter.aboveThreshold();
     bool debugOutputCondition = debug && LDDebugSerialTimer.isReady();
