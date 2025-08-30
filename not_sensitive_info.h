@@ -26,7 +26,8 @@ I used UART2
 #define LD_RX_PIN 16
 #define LD_TX_PIN 17
 #define UART_INTERFACE 2
-const uint8_t ENERGY_THRESHOLD 40; //the energy threshold, (0-100) before the room is considered to have no motion
+const uint8_t ENERGY_THRESHOLD = 40; //the energy threshold, (0-100) before the room is considered to have no motion
 
 
 #endif
+
