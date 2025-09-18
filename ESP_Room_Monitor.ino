@@ -205,7 +205,7 @@ void run_MQTT() { //checks if MQTT is connected and handles the current connecti
 }
 
 //DHT ----------------------------------------------------------------------------------------------------------------------------------------------------------
-IntervalTimer DHTTimer(2000);
+IntervalTimer DHTMessageTimer(MQTT_INTERVAL);
 DHT dht(DHT_PIN, DHT_TYPE);
 
 void setup_DHT() { //setup DHT pin-mode and start the DHT
@@ -218,7 +218,7 @@ void setup_DHT() { //setup DHT pin-mode and start the DHT
 }
 
 void run_DHT(bool debug = false) { //if enough time has passed, check the DHT readings and send through MQTT
-  if (DHTTimer.isReady()) {
+  if (DHTMessageTimer.isReady()) {
     float temperature = dht.convertCtoF(dht.readTemperature());
     float humidity = dht.readHumidity();
 
@@ -250,6 +250,7 @@ void run_DHT(bool debug = false) { //if enough time has passed, check the DHT re
 //Photoresistor ----------------------------------------------------------------------------------------------------------------------------------------------------------
 Debounce<bool> LDRDebounce(false);
 EMAFilter<int> LDRFilter(0.2, 0.1, LIGHT_THRESHOLD);
+IntervalTimer LDRMessageTimer(MQTT_INTERVAL);
 
 //gets the light value from the LDR, puts it into the filter, checks if the current filtered value is above the threshold, and sends to MQTT if state change
 //if the function is being run initially, it will warm up the filter
@@ -266,7 +267,7 @@ void run_LDR(bool debug = false, bool initialConnection = false) {
   }
   bool lightPresent = LDRFilter.aboveThreshold();
 
-  if (LDRDebounce.hasChanged(lightPresent) || initialConnection) {
+  if (LDRDebounce.hasChanged(lightPresent) || initialConnection || LDRMessageTimer.isReady()) {
     client.publish(light_topic, (lightPresent) ? "light" : "dark");
   }
 
@@ -290,6 +291,7 @@ void setup_LDR() { //sets the LDR pin-mode, and runs the "run_LDR" initially
 //LD2410C ----------------------------------------------------------------------------------------------------------------------------------------------------------
 IntervalTimer LDTimer(100);
 IntervalTimer LDDebugSerialTimer(1000);
+IntervalTimer LDMessageTimer(MQTT_INTERVAL);
 Debounce<bool> LDDebounce(false);
 EMAFilter<float> LDFilter(0.25, 0.05, 0.4);
 ld2410 motion_sensor;
@@ -332,7 +334,7 @@ void run_LD(bool debug = false) { //get sensor data, filter it, and send, on an 
     bool presence = LDFilter.aboveThreshold();
     bool debugOutputCondition = debug && LDDebugSerialTimer.isReady();
 
-    if (LDDebounce.hasChanged(presence)) {
+    if (LDDebounce.hasChanged(presence) || LDMessageTimer.isReady()) {
       client.publish(motion_topic, (presence) ? "ON" : "OFF");
     }
     
