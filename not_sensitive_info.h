@@ -3,7 +3,10 @@
 #ifndef NOT_SENSITIVE_INFO_H
 #define NOT_SENSITIVE_INFO_H
 
-//if you want to use different pins on your ESP32, you can easily change them here
+//if you want to use different pins or settings for your ESP32, you can easily change them here
+
+//the interval for when the ESP32 will send information via MQTT
+#define MQTT_INTERVAL 5000
 
 //the pin number that the on-board LED for the ESP32 uses. May or may not be different for your ESP32
 #define LED_BUILTIN 2
@@ -30,4 +33,5 @@ const uint8_t ENERGY_THRESHOLD = 40; //the energy threshold, (0-100) before the 
 
 
 #endif
+
 
