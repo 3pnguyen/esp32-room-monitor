@@ -18,10 +18,4 @@ This project was made to capture data from inside a room and send that data to H
 
 ## ⚡ Schematic
 
-<img width="1875" height="1337" alt="Schematic PNG" src="https://github.com/user-attachments/assets/743cee9b-19ec-4686-b6c2-3833eabdce51" />
-
-* I don't have a PCB design of this. 😁
-
-## 🪰 Known issues
-
-* If the senstivity for the LD2410C is too high it can detect other motion, even when someone is not in the room
+<img width="2850" height="2400" alt="Schematic (redone)" src="https://github.com/user-attachments/assets/c4518630-2e6a-4997-942b-e5beced810bb" />
