@@ -18,4 +18,5 @@ This project was made to capture data from inside a room and send that data to H
 
 ## ⚡ Schematic
 
-<img width="2850" height="2400" alt="Schematic (redone)" src="https://github.com/user-attachments/assets/c4518630-2e6a-4997-942b-e5beced810bb" />
+<img width="2550" height="2250" alt="Schematic 12_13_25" src="https://github.com/user-attachments/assets/30d6d08c-50c4-4cc9-b52f-b6d3e4268d1f" />
+
