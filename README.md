@@ -2,6 +2,8 @@
 
 ## An ESP32 project that uses a few sensors to monitor light, temperature, humidity, and motion in a room.
 
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-%2300979D.svg?style=for-the-badge&logo=Arduino&logoColor=white) ![KiCad](https://img.shields.io/badge/kicad-%23314CB0.svg?style=for-the-badge&logo=kicad&logoColor=white)
+
 ![Completed Build 1 (without enclosure)](https://github.com/user-attachments/assets/e35e205c-7968-424e-a256-367307a0e299)
 
 <img width="1286" height="851" alt="Home Assistant SS 2" src="https://github.com/user-attachments/assets/24d56b13-5f1e-485e-99d2-aa3e6731779b" />
