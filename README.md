@@ -4,9 +4,10 @@
 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Arduino IDE](https://img.shields.io/badge/Arduino%20IDE-%2300979D.svg?style=for-the-badge&logo=Arduino&logoColor=white) ![KiCad](https://img.shields.io/badge/kicad-%23314CB0.svg?style=for-the-badge&logo=kicad&logoColor=white)
 
-![Completed Build 1 (without enclosure)](https://github.com/user-attachments/assets/e35e205c-7968-424e-a256-367307a0e299)
+**Code may be updated to PlatformIO later on**
 
-<img width="1286" height="851" alt="Home Assistant SS 2" src="https://github.com/user-attachments/assets/24d56b13-5f1e-485e-99d2-aa3e6731779b" />
+<img width="300" alt="Completed Build (without enclosure)" src="images/completed build/Completed Build 1 (without enclosure).jpg">
+<img width="500" alt="Home Assistant SS 2" src="images/home assistant/dashboard.png" />
 
 ## ✨ About the project
 
@@ -20,5 +21,5 @@ This project was made to capture data from inside a room and send that data to H
 
 ## ⚡ Schematic
 
-<img width="2550" height="2250" alt="Schematic 12_13_25" src="https://github.com/user-attachments/assets/30d6d08c-50c4-4cc9-b52f-b6d3e4268d1f" />
+<img width="500" alt="Schematic 12_13_25" src="images/schematic/Schematic 12_13_25.png" />
 
