@@ -6,8 +6,10 @@
 
 **Code may be updated to PlatformIO later on**
 
-<img width="300" alt="Completed Build (without enclosure)" src="images/completed build/Completed Build 1 (without enclosure).jpg">
-<img width="500" alt="Home Assistant SS 2" src="images/home assistant/dashboard.png" />
+<div align="center">
+    <img width="700" src="images/completed build/Completed Build 1 (without enclosure).jpg">
+    <img width="700" src="images/home assistant/dashboard.png" />
+</div>
 
 ## ✨ About the project
 
@@ -21,5 +23,6 @@ This project was made to capture data from inside a room and send that data to H
 
 ## ⚡ Schematic
 
-<img width="500" alt="Schematic 12_13_25" src="images/schematic/Schematic 12_13_25.png" />
-
+<div align="center">
+    <img width="700" src="images/schematic/Schematic 12_13_25.png" />
+</div>
